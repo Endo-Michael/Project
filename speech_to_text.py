@@ -6,7 +6,7 @@ from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QTextEdit, QPushButton
 
 # Path to Vosk model (Ensure it is correct)
-MODEL_PATH = "C:\\Users\\ehond\\OneDrive\\Documents\\Python\\pythonProject\\vosk-model-small-en-us-0.15\\vosk-model-small-en-us-0.15"
+MODEL_PATH = ""
 
 class SpeechRecognitionThread(QThread):
     text_received = pyqtSignal(str)
