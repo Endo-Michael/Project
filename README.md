@@ -1,82 +1,61 @@
-# Speech-to-Text Recognition System
-Introduction
+# Speech-to-Text Recognition 
 
-The Speech-to-Text Recognition System is an AI-powered application that converts spoken language into written text using the Vosk speech recognition library. This project utilizes a pre-trained Vosk model to process audio input in real-time and transcribe it into text. The system is designed for efficient, offline speech recognition, making it suitable for various applications, including transcription services and accessibility tools.
+This project is a **Speech-to-Text Recognition System** that converts spoken words into written text using **Vosk**. It enables real-time speech transcription and can be used for various applications such as automated note-taking, voice assistants, and accessibility tools.
 
-Objectives
+##  Features
+- 🎤 **Real-time speech recognition**
+- 🔥 **Offline support** using Vosk models
+- 📜 **Supports multiple languages** (depending on model)
+- ⚡ **Lightweight and fast**
+- 📝 **Saves transcriptions** for later use
 
-Develop a speech-to-text system that operates efficiently without internet connectivity.
+## 🛠️ Installation
 
-Utilize Vosk, a lightweight and accurate speech recognition model.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/speech-to-text.git
+cd speech-to-text
+```
 
-Provide an intuitive GUI-based user experience for speech input and text output.
+### 2️⃣ Set Up a Virtual Environment (Recommended)
+```sh
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-System Overview
+### 3️⃣ Install Dependencies
+```sh
+pip install -r requirements.txt
+```
 
-This project consists of the following components:
+### 4️⃣ Download Vosk Model
+Download a Vosk model from [Vosk Models](https://alphacephei.com/vosk/models) and extract it into the `models` directory.
 
-Vosk Speech Model – A pre-trained deep learning model that recognizes speech.
-
-Audio Input Processing – Captures voice input through a microphone.
-
-Speech Recognition Engine – Uses the Vosk model to convert speech to text.
-
-Graphical User Interface (GUI) – Provides a user-friendly interface for input and display.
-
-Text Output Handling – Displays the transcribed text in real-time.
-
-AI Classification
-
-This project falls under supervised learning within the broader category of Natural Language Processing (NLP) and Automatic Speech Recognition (ASR). The Vosk model is trained using labeled datasets, where audio recordings are mapped to their corresponding transcriptions.
-
-Implementation Steps
-
-1. Install Dependencies
-
-Ensure you have Python installed, then install the required libraries:
-
-pip install vosk PyQt5
-
-2. Download and Extract Vosk Model
-
-Download a suitable Vosk model from Vosk Models and extract it into your project folder.
-
-3. Set Up the Project Directory
-
-Your project structure should look like this:
-
-SpeechToTextProject/
-│-- vosk-model/  # Extracted Vosk model folder
-│-- main.py  # Main application script
-│-- README.md  # Project documentation
-
-4. Implement the Speech Recognition Code
-
-Write a Python script (main.py) that:
-
-Loads the Vosk model
-
-Captures microphone input
-
-Processes speech and converts it to text
-
-Displays the output in a GUI using PyQt5
-
-5. Run the Application
-
-Execute the script:
-
+##  Usage
+Run the script and start speaking:
+```sh
 python main.py
+```
+The recognized text will be displayed on the terminal and saved to a file.
 
-Potential Enhancements
+## 📂 Project Structure
+```
+speech-to-text/
+│── models/            # Store downloaded Vosk models here
+│── output/            # Transcribed text files
+│── main.py            # Main script for speech recognition
+│── requirements.txt   # Dependencies list
+│── README.md          # Project documentation
+```
 
-Improve the GUI interface for a better user experience.
+## 🛠️ Dependencies
+- Python 3.x
+- Vosk
+- Pyaudio or Sounddevice (for audio input)
 
-Support multiple languages by using different Vosk models.
+## 📜 License
+This project is open-source and available under the **MIT License**.
 
-Implement real-time punctuation and formatting for improved transcription readability.
+---
 
-Conclusion
-
-This Speech-to-Text Recognition System provides an efficient way to transcribe speech into text using Vosk. Its offline functionality makes it highly useful in various settings, including accessibility tools, automated transcription, and voice-driven applications. Future improvements can enhance its accuracy, usability, and multilingual support.
-
+🚀 **Feel free to contribute!** Fork, star ⭐, and submit a pull request!
